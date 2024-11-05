@@ -1,0 +1,92 @@
+/* html{
+    height: 100%;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+.c1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(24, 85, 215);
+    animation-name: x;
+    animation-duration:0.8s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes x {
+  0%{
+    transform: translatey(20px);
+   }
+   50%{
+    transform: translatey(-40px);
+   }
+
+}
+.c2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(207, 220, 17);
+    animation-name: y;
+    animation-duration:0.8s;
+    animation-delay: 0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+@keyframes y {
+   0%{
+    transform: translatey(20px);
+   }
+   50% {
+    transform: translatey(-40px);
+   }
+
+}
+.c3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(215, 81, 24);;
+    animation-name: z;
+    animation-duration: 0.8s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes z {
+   0%{
+    transform: translatey(20px);
+   }
+   50%{
+    transform: translatey(-40px);
+   }
+   100%{
+    
+   }
+}
+.c4{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(23, 145, 179);
+    animation-name: a;
+    animation-duration:0.8s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+
+}
+@keyframes a {
+   0%{
+    transform: translatey(20px);
+   }
+   50%{
+    transform: translatey(-40px);
+   }
+}

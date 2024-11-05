@@ -1,0 +1,53 @@
+:root{
+        --Primary-color:#D18CC8;
+        --Secondary-color:#FFFFFE; 
+        --Accent-color:#D1127D;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+
+}
+.b1,.b2,.b3,.b4,.b5{
+     width:100px;
+     height: 60px;
+     border: 0px;
+     margin: 10px;
+     color:var(--Secondary-color) ;
+     font-size: 16px;
+     background-color:var(--Primary-color);
+     transition:all 2s ease;
+}
+.b1,.b2,.b3,.b4,.b5:hover{
+     padding-right: 10px;
+     padding-left: 10px;
+     cursor: pointer;
+}
+.box{
+    width:200px;
+    height: 200px;
+    background-color:var(--Accent-color);
+    position: absolute;
+    top: 150px;
+    transition: all 2s ease;
+}
+.b1:hover~.box{
+        transform: translatey(50%);
+}
+.b2:hover~.box{
+    transform: scale(1.2);
+}
+.b3:hover~.box{
+    transform:skew(60deg,45deg); 
+}
+.b4:hover~.box{
+    transform: rotate(180deg);
+}
+.b5:hover~.box{
+    transform: rotate(280deg) scale(1.8);
+}
